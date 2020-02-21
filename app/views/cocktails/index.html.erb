@@ -2,7 +2,7 @@
 
 <div class="container">
   <% @cocktails.each do |cocktail| %>
-    <%= image_tag "source", alt: "alttext" %>
+    <%#= image_tag "source", alt: "alttext" %>
     <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
   <% end %>
 </div>
