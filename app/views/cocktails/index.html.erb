@@ -1,0 +1,10 @@
+<h1>Cocktails</h1>
+
+<div class="container">
+  <% @cocktails.each do |cocktail| %>
+    <%= image_tag "source", alt: "alttext" %>
+    <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+  <% end %>
+</div>
+
+<b><%= link_to 'Create', new_cocktail_path %></b>
