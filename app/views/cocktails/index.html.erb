@@ -15,9 +15,11 @@
         <div class="cocktail-card-text">
           <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
         </div>
+        <%#= image_tag "logo.jpg", alt: "alttext" %>
       </div>
     <% else %>
       <div class="cocktail-card-alt">
+        <%#= image_tag "logo.jpg", alt: "alttext" %>
         <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
         <div class="cocktail-card-alt-text">
           <%= image_tag ("https://via.placeholder.com/150"), alt: "alttext" %>

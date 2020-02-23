@@ -48,12 +48,14 @@
   justify-content: center;
 }
 
-.cocktail-card-text {
+.cocktail-card-text h2 {
   padding-left: 10px;
+  color: $yellow;
 }
 
-.cocktail-card-alt-text {
+.cocktail-card-alt-text h2 {
   padding-right: 10px;
+  color: $red;
 }
 
 .create {
