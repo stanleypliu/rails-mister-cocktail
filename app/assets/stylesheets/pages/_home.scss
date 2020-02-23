@@ -1,4 +1,69 @@
 // Specific CSS for your home-page
-h1 {
+.banner {
+  text-align: center;
+  background: rgba(30,30,30,0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.banner h1 {
+  font-weight: bold;
+}
+
+.logo {
+  height: 15vh;
+}
+
+.cocktail-card {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  text-decoration: none;
+  margin-top: 20px;
+  justify-content: space-around;
+  background-color: rgba(0,0,0, 0.4);
+  border-radius: 5px;
+  padding: 10px 0px;
+}
+
+.cocktail-card-alt {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  text-decoration: none;
+  margin-top: 20px;
+  justify-content: space-around;
+  background-color: rgba(0,0,0, 0.7);
+  border-radius: 5px;
+  padding: 10px 0px;
+}
+
+.cocktail-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cocktail-card-text {
+  padding-left: 10px;
+}
+
+.cocktail-card-alt-text {
+  padding-right: 10px;
+}
+
+.create {
+  padding-right: 20px;
+}
+
+.create a {
+  transition: 0.7s;
+}
+
+.create a:hover {
 
 }

@@ -1,10 +1,30 @@
-<h1>Cocktails</h1>
+<div class="banner">
+  <!-- <h1>Cocktails</h1> -->
+  <%= image_tag "site-logo.png", alt: "logo", class: 'logo' %>
+  <div class="create">
+    <h4><b><%= link_to 'Create your own', new_cocktail_path %></b></h4>
+  </div>
+</div>
 
-<div class="container">
+
+<div class="cocktail-cards">
   <% @cocktails.each do |cocktail| %>
-    <%#= image_tag "source", alt: "alttext" %>
-    <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+    <% if cocktail.id % 2 == 0 %>
+      <div class="cocktail-card">
+        <%= image_tag ("https://via.placeholder.com/150"), alt: "alttext" %>
+        <div class="cocktail-card-text">
+          <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+        </div>
+      </div>
+    <% else %>
+      <div class="cocktail-card-alt">
+        <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+        <div class="cocktail-card-alt-text">
+          <%= image_tag ("https://via.placeholder.com/150"), alt: "alttext" %>
+        </div>
+      </div>
+    <% end %>
   <% end %>
 </div>
 
-<b><%= link_to 'Create', new_cocktail_path %></b>
+

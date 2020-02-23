@@ -7,11 +7,11 @@
 $font-family-sans-serif:  $body-font;
 $headings-font-family:    $headers-font;
 $body-bg:                 $funky-blue;
-$font-size-base: 1rem;
+$font-size-base: 2rem;
 
 // Colors
-$body-color: $salmon;
-$primary:    $khaki;
+$body-color: $darker-blue;
+$primary:    $white;
 $success:    $green;
 $info:       $yellow;
 $danger:     $red;
@@ -23,3 +23,6 @@ $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
 // Override other variables below!
+$link-color: $primary;
+$link-hover-decoration: none;
+$link-hover-color: darken($link-color, 40%);

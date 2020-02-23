@@ -11,3 +11,9 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-image: linear-gradient(rgba(0,0,0, 0.8)), url('cocktails.jpg');
+  background-size: cover;
+  background-repeat: none;
+}
